@@ -1,9 +1,8 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
-## Arno Polegato
-*Research master student at the University of Amsterdam
-*Marketing science - growth analytics intern at Booking.com
+* Research master student at the University of Amsterdam
+* Marketing science - growth analytics intern at Booking.com
