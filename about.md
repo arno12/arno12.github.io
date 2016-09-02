@@ -1,8 +1,10 @@
 ---
 layout: page
-title: About me
-permalink: /about/
+title: About
 ---
 
-* Research master student at the University of Amsterdam
-* Marketing science - growth analytics intern at Booking.com
+Hello.
+
+This site was curated by owls and populated by penguins until I took over. 
+
+They now went on to their next adventure!
