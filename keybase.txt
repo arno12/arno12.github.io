@@ -1,0 +1,60 @@
+
+==================================================================
+https://keybase.io/onra
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://polegato.me
+  * I am onra (https://keybase.io/onra) on keybase.
+  * I have a public key ASBuLUVu_dTWSSmk8kkPlM0wr2FMvF04cbS8Vm-tL3p1SQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid":
+"01206e2d456efdd4d64929a4f2490f94cd30af614cbc5d3871b4bc566fad2f7a75490a",
+            "host": "keybase.io",
+            "kid":
+"01206e2d456efdd4d64929a4f2490f94cd30af614cbc5d3871b4bc566fad2f7a75490a",
+            "uid": "f2c113293a13892622c97b9afd6fd219",
+            "username": "onra"
+        },
+        "service": {
+            "hostname": "polegato.me",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1484080640,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1484080584,
+        "hash":
+"e8c0f52acb798790b21acf253555cf9fe2e4d327b0b0c308e41f9c98918639253d060ef6bfc9b09a9aa0122e2fa4a8b00202cb17892408917614b06fe9dab09f",
+        "seqno": 794142
+    },
+    "prev":
+"ef8aca8be8201c55fcd51718216fc4f576f351c602e9913b719103ee5b51f62a",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgbi1Fbv3U1kkppPJJD5TNMK9hTLxdOHG0vFZvrS96dUkKp3BheWxvYWTFAu57ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNmUyZDQ1NmVmZGQ0ZDY0OTI5YTRmMjQ5MGY5NGNkMzBhZjYxNGNiYzVkMzg3MWI0YmM1NjZmYWQyZjdhNzU0OTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNmUyZDQ1NmVmZGQ0ZDY0OTI5YTRmMjQ5MGY5NGNkMzBhZjYxNGNiYzVkMzg3MWI0YmM1NjZmYWQyZjdhNzU0OTBhIiwidWlkIjoiZjJjMTEzMjkzYTEzODkyNjIyYzk3YjlhZmQ2ZmQyMTkiLCJ1c2VybmFtZSI6Im9ucmEifSwic2VydmljZSI6eyJob3N0bmFtZSI6InBvbGVnYXRvLm1lIiwicHJvdG9jb2wiOiJodHRwOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xOCJ9LCJjdGltZSI6MTQ4NDA4MDY0MCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDg0MDgwNTg0LCJoYXNoIjoiZThjMGY1MmFjYjc5ODc5MGIyMWFjZjI1MzU1NWNmOWZlMmU0ZDMyN2IwYjBjMzA4ZTQxZjljOTg5MTg2MzkyNTNkMDYwZWY2YmZjOWIwOWE5YWEwMTIyZTJmYTRhOGIwMDIwMmNiMTc4OTI0MDg5MTc2MTRiMDZmZTlkYWIwOWYiLCJzZXFubyI6Nzk0MTQyfSwicHJldiI6ImVmOGFjYThiZTgyMDFjNTVmY2Q1MTcxODIxNmZjNGY1NzZmMzUxYzYwMmU5OTEzYjcxOTEwM2VlNWI1MWY2MmEiLCJzZXFubyI6OSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEBfMuCW9xE8GDjTHmnvRKabwFz/x7lDFp0nEYa2CNPnwQMo3yj/i+fflekGlkqHgeZR0sqttu/wO0BDCDJbeCQLqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg+0CMl16zyJY8+tavkMYxb4VMtP348JpH84zOlyvzq7CjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/onra
+
+==================================================================
+
