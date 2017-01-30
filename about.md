@@ -10,6 +10,7 @@ Writing about world events is important to me because I feel a responsibility to
 I believe in open-source communities to bring the best out of governance and social actions. 
 The novel ways in which data can be used to deliver valuable insights in an interactive way passionates me.
 I am currently looking for a new challenge, feel free to reach out to me! 
-
+<center>
 <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
 <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/arno-polegato" data-format="inline" data-related="false"></script>
+</center>
