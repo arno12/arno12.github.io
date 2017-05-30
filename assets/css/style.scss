@@ -1,0 +1,35 @@
+---
+---
+
+@import "{{ site.theme }}";
+body {
+  font-family: 'Fira Sans', sans-serif;
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  @media (min-width: 992px) {
+    padding: 35px 50px;
+  }
+
+
+article {
+  max-width: 700px;
+  margin: 0 auto;
+  .title {
+    line-height: 1.4em;
+    text-align: center;
+  }
+  .divider {
+    background: #ddd;
+    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    height: 1px;
+    margin: 2em 0;
+  }
+  .center {
+    text-align: center;
+    margin: 0 auto;
+  }
