@@ -2,7 +2,7 @@
 title: Writing periodically
 updated: 2016-11-23 15:08
 category: opinion
-permalink: date
+permalink: /:categories/:year/:month/:day/:title.html
 ---
 
 ### Creating habits
