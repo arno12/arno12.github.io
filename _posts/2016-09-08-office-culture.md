@@ -1,6 +1,7 @@
 ---
 title: Those uncomfortable jibes
 updated: 2016-09-08 15:08
+category: life
 ---
 
 ### The problem

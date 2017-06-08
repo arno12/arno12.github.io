@@ -1,6 +1,7 @@
 ---
 title: Injustices
 updated: 2016-12-14 11:30
+category: opinion
 ---
 
 ### Bombardment
