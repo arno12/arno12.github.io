@@ -2,6 +2,7 @@
 title: Writing periodically
 updated: 2016-11-23 15:08
 category: opinion
+permalink: date
 ---
 
 ### Creating habits
