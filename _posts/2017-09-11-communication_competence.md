@@ -9,7 +9,7 @@ It happens every so often. The atmosphere is relaxed, we're within a small group
 
 Having studied a bachelor of communication, and a master of political communication, I have become acustomed to public opinion theories, the various ways in which people receive and interpret messages, whether persuasive or not, and the potential effects at work during these situations. So I started to wonder whether a certain form of spiral of silence was occuring in my situation. The [Spiral of Silence](https://masscommtheory.com/theory-overviews/spiral-of-silence/) theory was originally defined by [Elisabeth Noelle-Neumann](http://en.wikipedia.org/wiki/Elisabeth_Noelle-Neumann) in 1974[^1]. Noelle-Neumann asserted that in public settings, some people might prefer to censor themselves because they sense that the majority of the group holds an opposite view. Concretely, imagine a group of friends discussing politics at a bar. One of them is a Clinton supporter but realizes that the other five people are in fact Trump sympathizers. Instead of entering an argument that could potentially become conflicting and result in isolation, the Clinton supporter might choose not to express herself or himself. 
 
-![alt text](http://polegato.me/assets/spiralofsilence.jpg 'The Spiral of Silence')
+![alt text](http://polegato.me/assets/spiralofsilence.png 'The Spiral of Silence')
 
 ### Why does it happen?
 According to Noelle-Neumann it can occur because of:
