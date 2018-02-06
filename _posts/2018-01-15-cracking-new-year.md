@@ -12,7 +12,7 @@ Fascinating, the human condition. We spend the major part of our day spending in
 Despite being more or less fulfilling based on the nature of the position, it is essentially counter-intuitive to invest so much intellectual capital into a commercial infrastructure that aims to remain profitable. 
 
 ![alt text](http://polegato.me/assets/humberto.jpg 'Oblivion, painting by Humberto Barajas')
-_Oblivion, painting by Humberto Barajas_
+_Oblivion, painting by [Humberto Barajas](https://stranger-bot.deviantart.com/)_
 
 #### Going against the flow
 In the end it seems that a majority of those who truly feel self-fulfilled gathers such a feel from their ability to refuse such "routine condition" by going against the imposed flow of "métro boulot dodo". While this argument can often be interpreted as rather superficial because of its repetition in popular culture, it nonetheless deserves acrued attention. "Going against the flow" is not simply what certain people (interestingly often those who managed to gain a little bit of hierarchic advantage over others) view as pseudo-anarchist. 
