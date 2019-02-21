@@ -1,5 +1,7 @@
+
+
 body {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Open Sans',serif;
   padding: 20px;
   margin: 0;
   font-weight: 300;
@@ -9,11 +11,17 @@ body {
     padding: 35px 50px;
   }
 }
+
+h1 {
+  color: #343a40;
+}
+
 h2,
 h3,
 h4,
 h5 {
   margin: 45px 0 25px;
+  color: #0075b5;
 }
 img {
   max-width: 100%;
@@ -274,6 +282,11 @@ article {
     text-align: center;
     margin: 0 auto;
   }
+
+  h1 {
+    color: #0075b5;
+  }
+
   hr {
     border: 0;
     border-bottom: 1px solid #000;
@@ -283,6 +296,7 @@ article {
     font-size: 15px;
     line-height: 1.9em;
     word-wrap: break-word;
+    color: #868e96;
   }
   .footnote {
     border: 0;
@@ -331,6 +345,7 @@ section {
         border: 0;
         color: #000;
         box-sizing: border-box;
+        color: #868e96;
       }
       .post-date {
         float: right;

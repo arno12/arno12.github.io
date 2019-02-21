@@ -6,20 +6,20 @@ tags: social media, facebook, communication, image, framing, media, network theo
 permalink: /:categories/:year/:month/:day/:title.html
 ---
 
-# Saying Goodbye to Facebook: Debrief with a note of Network Theory 
+## Saying Goodbye to Facebook: Debrief with a note of Network Theory 
 The idea has triggered every user...
 
 _How would my life change if I were to leave Facebook?_ 
 
 A simple yet returning question for many of us. While the share of cons has been widely evoked, from scientific papers to episodes of Black Mirror, one can hardly disregard the pros of the social platform. So much so that in most conversations that I hear between friends contemplating the idea, a few major arguments tend to repeat themselves. I want to try and address them and reflect how they affected me in practice.
 
-## Implications: Online vs. Offline
+### Implications: Online vs. Offline
 Although these terms sound like the lyrics of an overplayed summer hit on the radio that you can’t escape, it’s important to make a distinction between online and offline effects. Since we’re talking about a digital platform, the most evident ones are online. But the consequences are sometimes inevitably offline too.
 
-### Online
+#### Online
 By deciding the leave the network, you decide to give up on the platform and the online communication that it enables you to be involved in. You must say goodbye to the embellished window into your friends’ lives, their personal updates, their birthdays, the events happening around, the few conflictive conversations that have not been avoided by the filter bubble [https://en.wikipedia.org/wiki/Filter_bubble] that Facebook’s algorithm enforced in your newsfeed. And while deciding what information you might most be interested in seeing, Facebook analyzes the relationships that you have with them. How often do you talk? Is the tone more personal or professional? Are you more or less emotional? These things can be determined through some automated text analysis, or text mining [https://en.wikipedia.org/wiki/Text_mining] applied to a large scale of data. Based on these techniques, Facebook understands if your friends are close or distant, strong ties or weak ties.
 
-![alt text](http://polegato.me/assets/ties.jpg 'Oblivion, Weak and strong ties illustration by Howard Ogawa)
+![alt text](http://polegato.me/assets/ties.jpg 'Oblivion, Weak and strong ties illustration by Howard Ogawa')
 
 #### Interpersonal ties
 While you might indeed miss out on some juicy conversations with your close friends and eventually some interesting gossip from the groups you’re active, the strongest impact of leaving Facebook will be on what social media theorists call weak ties [http://changingminds.org/explanations/theories/weak_ties.htm]. Network theorist Mark Granovetter [https://sociology.stanford.edu/people/mark-granovetter], who is widely considered as a pioneer of the field, shares a dichotomous view of one’s acquaintances where some people are classified as strong ties (hear good friends) or weak ties (distant friends). While there is reason to criticize dichotomies for their oversimplification of complex social stimuli, it seems intuitive to follow the base of Granovetter’s assumptions. Who hasn’t, thanks to Facebook, remembered that friends A, B and C had a birthday coming up. And wait, who was B again? Did I meet C at A’s birthday? How did I end up there in the first place? It could be that when I was still in high school, I once went to this event with B and decided to keep in touch through this intriguing new web platform branding itself as a social network. These are weak ties, and clearly, they do not represent the majority of one’s interactions online. 
