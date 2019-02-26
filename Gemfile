@@ -7,3 +7,4 @@ gem 'html-proofer'
 gem 'tzinfo'
 gem 'tzinfo-data'
 gem 'jemoji'
+gem "activesupport", ">= 4.1.11"
