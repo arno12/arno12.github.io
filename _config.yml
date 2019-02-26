@@ -1,6 +1,6 @@
 # Site Info
 title:              "Arno Polegato"
-description:        "This website was run by owls and curated by squirrels until Arno took over"
+description:        "Arno Polegato - Resume and Blog"
 google_verify:      sLMRKNYbC4Ztmh9eix8n0Omx24eY3oyF8sCfdUjZE8M # Put your Google Verification here
 google_analytics:   UA-83439726-1 # Put your Google Analytics code
 
@@ -31,6 +31,7 @@ include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
 plugins:
   - jekyll-sitemap
+  - jemoji
 
 compress_html:
     clippings:      all
