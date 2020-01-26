@@ -1,12 +1,12 @@
 ---
-title: To Save Everything, Click Here
+title: I left Brussels because I prefer Amsterdam
 updated: 2020-01-26 16:30
 category: opinion
 tags: amsterdam, brussels, amsterdam vs brussels, society, urban planning, opinion, belgium, flemish, walloon
 permalink: /:categories/:year/:month/:day/:title.html
 ---
 
-## Why is Amsterdam Bettern than Brussels
+## Why is Amsterdam Better than Brussels
 It frequently happens when I meet new people, and sometimes even with existing friends who feel curious about it as well. "Arno, why did you choose to go live in Amsterdam?". A mundane question, for which thousands of answers could be valid and to which, for the most part, you only come to disentangle the real from superficial arguments after some time. 
 
 Despite not intending to create any sort of hierarchy which would inevitably be unfair without a clear overview of a set of metrics upon which a comparison can be made, I cannot avoid that one will be created, because this is also how as humans we simplify things mentally. There is good and bad, or at least things slightly better and slightly worse, which we need to separate in clear dichotomous categories to simplify our decision making and increase efficiency (this is best exemplified by Daniel Kahneman).
