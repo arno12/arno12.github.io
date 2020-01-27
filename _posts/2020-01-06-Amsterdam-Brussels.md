@@ -6,7 +6,7 @@ tags: amsterdam, brussels, amsterdam vs brussels, society, urban planning, opini
 permalink: /:categories/:year/:month/:day/:title.html
 ---
 
-![alt text](http://polegato.me/assets/brussels_amsterdam_map.png 'Biking from Brussels to Amsterdam')
+![alt text](https://polegato.me/assets/brussels_amsterdam_map.png 'Biking from Brussels to Amsterdam')
 
 ## Why is Amsterdam Better than Brussels
 It frequently happens when I meet new people, and sometimes even with existing friends who feel curious about it as well. "Arno, why did you choose to go live in Amsterdam?". A mundane question, for which thousands of answers could be valid and to which, for the most part, you only come to disentangle the real from superficial arguments after some time. 
