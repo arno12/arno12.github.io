@@ -1,0 +1,158 @@
+---
+title: "How to join overlapping date ranges in SQL"
+author: "Arno Polegato"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    theme: united
+    highlight: tango
+    toc_float: true
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+setwd("~/site/arno12.github.io/R Markdown posts/")
+
+knitr::opts_chunk$set(echo = TRUE)
+
+require(tidyverse)
+require(DBI)
+require(RSQLite)
+
+cars <- read.csv("cars.csv") %>% 
+  mutate(active_from = lubridate::ymd_hms(active_from), 
+         active_until = lubridate::ymd_hms(active_until))
+occupations <- read.csv("occupations.csv") %>% 
+  mutate(active_from = lubridate::ymd_hms(active_from), 
+         active_until = lubridate::ymd_hms(active_until))
+
+db = dbConnect(RSQLite::SQLite(), dbname = ":memory:")
+dbWriteTable(db, "cars", cars)
+dbWriteTable(db, "occupations", occupations)
+```
+
+# Context
+
+As a Data Analyst, I tend to become increasingly comfortable with all sorts of data manipulation. The raw data we receive varies in its structure, and we can receive long or wide dataframes (read more about this [here](http://www.cookbook-r.com/Manipulating_data/Converting_data_between_wide_and_long_format/)). 
+At [Blendle](blendle.com), we use Looker as our BI tool to transform the incoming data from our ETL into actionable insights. Looker enables you to create [derived tables](https://looker.com/platform/blocks/analytic/derived-tables-pattern), which are essentially new tables that you do not want in your database because they would clutter it, but that might serve a purpose for BI analysis. 
+
+# Problem
+I recently came across a problem that I had not faced in the past and couldn't find an easy answer to. As most challenging problems often are, this was about manipulating date/timestamp data.
+
+We collect data about the transitions of our user, meaning that every time a user switches from product A to product B, we create a row of data with this change. The same is done with their specific state, which tells us whether they are premium subscribers or not. A table is worth a thousand words in this case so just have a look at it yourself (for obvious reasons, this is fake data)
+
+## First table: Cars
+Our first table contains information about two users, their car, and the period during which they've had it
+```{r table_a, echo=FALSE}
+cars
+```
+
+## Second table: Occupations
+Our second table contains information about the same users, their occupation, and the period during which they've held it
+```{r table_b, echo=FALSE}
+occupations
+```
+
+# Transformation guide
+While most of the joins in SQL occur directly, we cannot do this normally in this case because of the overlaps between date ranges. Both users have a set of changes in their occupations and cars that are not relevant anymore once we combine them. Therefore, we must first identify all of the potential intersections that occur between them.
+In order to do so, we can [union](https://www.w3schools.com/sql/sql_union.asp) (combine rows) the timestamps for each user, and this will give us our needed base for the timestamps. Just take a look:
+
+## Unioning the timestamps of each user
+Let's union all of the timestamps together
+```{sql, connection=db, max.print = NA}
+  SELECT User, datetime(active_from, 'unixepoch') AS timestamp FROM cars
+  UNION
+  SELECT User, datetime(active_until, 'unixepoch') AS timestamp FROM cars
+  UNION
+  SELECT User, datetime(active_from, 'unixepoch') AS timestamp FROM occupations
+  UNION
+  SELECT User, datetime(active_until, 'unixepoch') AS timestamp FROM occupations
+```
+
+You can see that we know have all of the unique timestamps displayer for our two users. There are still some NA's for the ongoing statuses, which do not contain an end date yet. One options which we are currently using is to [`COALESCE`](https://www.w3schools.com/SQL/func_sqlserver_coalesce.asp) those missing values with `CURRENT_TIMESTAMP` so that the latest date is equal to the moment the query is run. 
+
+## Adding the until to the list of timestamps
+We currently have a list of all the timestamps for each user, but we want those to be in the same format as the input. In order to do so, we can use a [window function](https://www.sqltutorial.org/sql-window-functions/), which will help us gather the next timestamp for each user.  
+
+```{sql, connection=db, max.print = NA}
+WITH date_intersects AS (
+  SELECT User, datetime(active_from, 'unixepoch') AS timestamp FROM cars
+  UNION
+  SELECT User, datetime(active_until, 'unixepoch') AS timestamp FROM cars
+  UNION
+  SELECT User, datetime(active_from, 'unixepoch') AS timestamp FROM occupations
+  UNION
+  SELECT User, datetime(active_until, 'unixepoch') AS timestamp FROM occupations
+)
+
+    SELECT
+        user,
+        timestamp AS active_from,
+        COALESCE(LEAD(timestamp) OVER (PARTITION BY User ORDER BY timestamp), CURRENT_TIMESTAMP) AS active_until
+    FROM
+        date_intersects
+    WHERE 
+        timestamp IS NOT NULL
+```
+
+We have now succesfully gathered all of the time intersects that existed for each user. We can look into joining back the initial information (the type of car and occupation) back to this new format. 
+
+## Joining back the initial information
+We can join back the initial information using a clever `LEFT JOIN` that verifies that:
+
+1. We are looking at the same user
+2. The `active_from` of the initial table must be _before_ the beginning of the period
+4. The `active_until` (or `CURRENT_TIMESTAMP` if it is `NULL`) must be at or after the _end_ of the period
+
+```{sql, connection=db, max.print = NA}
+WITH date_timestamps AS (
+    SELECT User, datetime(active_from, 'unixepoch') AS timestamp FROM cars
+    UNION
+    SELECT User, datetime(active_until, 'unixepoch') AS timestamp FROM cars
+    UNION
+    SELECT User, datetime(active_from, 'unixepoch') AS timestamp FROM occupations
+    UNION
+    SELECT User, datetime(active_until, 'unixepoch') AS timestamp FROM occupations
+),
+
+date_intersects AS (
+    SELECT
+        user,
+        timestamp AS active_from,
+        COALESCE(LEAD(timestamp) OVER (PARTITION BY User ORDER BY timestamp), CURRENT_TIMESTAMP) AS active_until
+    FROM
+        date_timestamps
+    WHERE 
+        timestamp IS NOT NULL
+)
+
+SELECT
+    date_intersects.user,
+    date_intersects.active_from,
+    date_intersects.active_until,
+    COALESCE(cars.car,'None') AS car,
+    COALESCE(occupations.occupation,'None') AS occupation
+FROM
+    date_intersects
+    LEFT JOIN cars ON cars.user = date_intersects.user
+        AND datetime(cars.active_from, 'unixepoch') <= date_intersects.active_from
+        AND COALESCE(datetime(cars.active_until, 'unixepoch'),CURRENT_TIMESTAMP) >= date_intersects.active_until
+    LEFT JOIN occupations ON occupations.user = date_intersects.user
+        AND datetime(occupations.active_from, 'unixepoch') <= date_intersects.active_from
+        AND COALESCE(datetime(occupations.active_until, 'unixepoch'),CURRENT_TIMESTAMP) >= date_intersects.active_until
+```
+
+And you're all done! You should now have the output you were looking for. I hope this helped you get there faster than it took me the first time. If you have additional questions, feel free to reach out to me on [Twitter](https://twitter.com/NosyOwl).
+
+# Try it yourself (R)
+If you want to test this yourself, you can generate the source tables (in R) using the following snippets
+```{r reproduce, echo=FALSE, comment = ''}
+dput(cars)
+dput(occupations)
+```
+
+_Built with R `r getRversion()`_
