@@ -1,6 +1,7 @@
 # Site Info
 title:              "Arno Polegato"
-description:        "Arno Polegato - CV and Blog"
+tagline:            "Arno Polegato's website" 
+description:        "Website containing Arno's resume / CV and my blog posts"
 google_verify:      sLMRKNYbC4Ztmh9eix8n0Omx24eY3oyF8sCfdUjZE8M # Put your Google Verification here
 google_analytics:   UA-83439726-1 # Put your Google Analytics code
 
@@ -8,7 +9,9 @@ google_analytics:   UA-83439726-1 # Put your Google Analytics code
 author_name:        "Arno Polegato"
 author_email:       arno.polegato@gmail.com
 author_gravatar:    /arno-profile-close.png # Gravatar md5 hash
-twitter_username:   NosyOwl
+twitter:
+  username:   NosyOwl
+  card:       summary
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
@@ -32,6 +35,7 @@ exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
 plugins:
   - jekyll-sitemap
   - jemoji
+  - jekyll-seo-tag
 
 compress_html:
     clippings:      all
