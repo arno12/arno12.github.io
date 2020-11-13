@@ -23,7 +23,7 @@ reasoning behind them.
   </summary>
 
   {{ post.content | truncatewords:75 }}
-
+  </p>
   <br>
 
 </details>
