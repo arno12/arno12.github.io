@@ -15,7 +15,7 @@ twitter:
 
 # Site Settings
 baseurl:            "/" # Base URL must end WITHOUT a slash, default: ""
-permalink:          /blog/:categories/:year/:month/:day/:title.html # Post permalink
+permalink:          /:categories/:year/:month/:day/:title.html # Post permalink
 timezone:           Europe/Amsterdam # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 version:            2.0.0
 
