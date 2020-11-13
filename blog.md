@@ -7,19 +7,26 @@ This is a collection of blog posts that I wrote about various topics. There isn'
 reasoning behind them.
 
 <ul>
+
 {% for post in site.posts %}
+
 <h2 class="post-title">
   {% unless post.category contains "rmarkdown" %}
   <a href="{{ post.url }}">{{ post.title }}</a>
-  </h2>
-  <span class="post-date">{{ post.date | date_to_string }}</span>
+</h2>
 
-  <details>
-    <summary>Show excerpt</summary>
-    {{ post.content | truncatewords:75 }}
-    <br>
-  </details>
+<span class="post-date">{{ post.date | date_to_string }}</span>
+
+<details>
+  <summary>Show excerpt</summary>
+
+  {{ post.content | truncatewords:75 }}
+
   <br>
+</details>
+<br>
+
   {% endunless %}
-  {% endfor %}
+  
+{% endfor %}
 </ul>
