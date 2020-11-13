@@ -100,7 +100,7 @@ html {
 .sidebar-bottom {
   font-size: 0.7rem;
   position: absolute;
-  bottom: 0rem;
+  bottom: 6rem;
 }
 .sidebar-highlight-Home:hover {
   text-decoration: underline;
@@ -135,6 +135,7 @@ a.sidebar-nav-item:focus {
 @media (min-width: 48em) {
   .sidebar-sticky {
     position: absolute;
+    height: 100%;
     right:  1rem;
     top:    4rem;
     left:   1rem;
