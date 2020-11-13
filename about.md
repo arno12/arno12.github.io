@@ -1,30 +1,13 @@
 ---
 layout: page
 title: About
+permalink: /about/
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Working as a Data Analyst for the past few years, I have learned to leverage complex data flows into efficient processing steps that enable me to derive actionable insights that can empower stakeholders.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I particularly enjoy taking part in the creation of predictive models using a wide range of statistical methods and communicating insights through data visualization. I am a fan of R's Tidyverse packages.
 
-There are currently two themes built on Poole:
+Looking for a compact summary of all this?
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+📝[Download my CV](http://polegato.me/assets/Arno_Polegato_CV.pdf)

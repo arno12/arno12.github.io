@@ -57,7 +57,7 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background-color: #202020;
+  background-color: #6969B6;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -83,6 +83,12 @@ html {
   font-size: 3.25rem;
 }
 
+.sidebar-about .first_name {
+  font-size:2rem;
+  margin: 0;
+  margin-bottom: -1rem;
+}
+
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
@@ -90,6 +96,27 @@ html {
 .sidebar-nav-item {
   display: block;
   line-height: 1.75;
+}
+.sidebar-bottom {
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 0rem;
+}
+.sidebar-highlight-Home:hover {
+  text-decoration: underline;
+  text-decoration-color: #6969B6;
+}
+.sidebar-highlight-About:hover {
+  text-decoration: underline;
+  text-decoration-color: #90a959;
+}
+.sidebar-highlight-Blog:hover {
+  text-decoration: underline;
+  text-decoration-color: #202020;
+}
+.sidebar-highlight-Data:hover {
+  text-decoration: underline;
+  text-decoration-color: #d28445;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
@@ -109,7 +136,7 @@ a.sidebar-nav-item:focus {
   .sidebar-sticky {
     position: absolute;
     right:  1rem;
-    bottom: 1rem;
+    top:    4rem;
     left:   1rem;
   }
 }
@@ -178,39 +205,39 @@ a.sidebar-nav-item:focus {
 /* Base16 (http://chriskempson.github.io/base16/#default) */
 
 /* Red */
-.theme-base-08 .sidebar {
+.theme-base-red .sidebar {
   background-color: #ac4142;
 }
-.theme-base-08 .content a,
-.theme-base-08 .related-posts li a:hover {
+.theme-base-red .content a,
+.theme-base-red .related-posts li a:hover {
   color: #ac4142;
 }
 
 /* Orange */
-.theme-base-09 .sidebar {
+.theme-base-orange .sidebar {
   background-color: #d28445;
 }
-.theme-base-09 .content a,
-.theme-base-09 .related-posts li a:hover {
+.theme-base-orange .content a,
+.theme-base-orange .related-posts li a:hover {
   color: #d28445;
 }
 
 /* Yellow */
-.theme-base-0a .sidebar {
-  background-color: #f4bf75;
+.theme-base-yellow .sidebar {
+  background-color: #E1BD52;
 }
-.theme-base-0a .content a,
-.theme-base-0a .related-posts li a:hover {
-  color: #f4bf75;
+.theme-base-yellow .content a,
+.theme-base-yellow .related-posts li a:hover {
+  color: #E1BD52;
 }
 
 /* Green */
-.theme-base-0b .sidebar {
-  background-color: #90a959;
+.theme-base-green .sidebar {
+  background-color: #6eb66a;
 }
-.theme-base-0b .content a,
-.theme-base-0b .related-posts li a:hover {
-  color: #90a959;
+.theme-base-green .content a,
+.theme-base-green .related-posts li a:hover {
+  color: #6eb66a;
 }
 
 /* Cyan */
@@ -222,13 +249,13 @@ a.sidebar-nav-item:focus {
   color: #75b5aa;
 }
 
-/* Blue */
-.theme-base-0d .sidebar {
-  background-color: #6a9fb5;
+/* Black */
+.theme-base-black .sidebar {
+  background-color: #40403f;
 }
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
+.theme-base-black .content a,
+.theme-base-black .related-posts li a:hover {
+  color: #40403f;
 }
 
 /* Magenta */
