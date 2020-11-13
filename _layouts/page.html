@@ -2,16 +2,19 @@
 layout: default
 ---
 
-<article>
-
-	<h1 class="title">{{ page.title }}</h1>
-
-	<div class="divider"></div>
-
-	{{ content }}
-
-</article>
-
-<div class="back">
-	<a href="{{site.baseurl}}/">Back</a>
+{% if page.title == 'Data' %}
+<body class="theme-base-orange">
+{% elsif page.title == 'About' %}
+<body class="theme-base-green">
+{% elsif page.title == 'Blog' %}
+<body class="theme-base-black">
+{% elsif page.title == 'Research' %}
+<body class="theme-base-yellow">
+{% else %}
+<body>
+{% endif %}
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {{ content }}
 </div>
+</body>

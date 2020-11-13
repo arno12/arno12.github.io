@@ -2,8 +2,8 @@
 title: Communication Competence
 updated: 2017-09-11 11:30
 category: opinion, research, academia, communication
-permalink: /:categories/:year/:month/:day/:title.html
 ---
+
 ### The Spiral of Silence
 It happens every so often. The atmosphere is relaxed, we're within a small group of people, including friends and acquaintances. Theoreteically, everything is set up for an easy conversation where each and everyone expresses their views about a topic. But that one day, I am not talking. I am not expressing myself, because there is more to gain by censoring my arguments to hear the others'. Sometimes, I encounter individuals who truly stand out, with a mixture of expertise and charisma, and communicate their trains of thought with unparalleled grandeur. This has happened to me a few times already, and as every social scientist having found interest in their field, I have wondered whether there was a pattern somewhere, whether it was a logical reaction to certain stimuli. 
 
