@@ -18,15 +18,19 @@ reasoning behind them.
 <span class="post-date">{{ post.date | date_to_string }}</span>
 
 <details>
-  <summary>Show excerpt</summary>
+  <summary> 
+    Show excerpt 
+  </summary>
 
   {{ post.content | truncatewords:75 }}
 
   <br>
+
 </details>
+
 <br>
 
   {% endunless %}
-  
+
 {% endfor %}
 </ul>
