@@ -3,7 +3,6 @@ title: I left Brussels because I prefer Amsterdam
 updated: 2020-01-26 16:30
 category: opinion
 tags: amsterdam, brussels, amsterdam vs brussels, society, urban planning, opinion, belgium, flemish, walloon
-permalink: /:categories/:year/:month/:day/:title.html
 ---
 
 ![alt text](/../assets/brussels_amsterdam_map.png 'Biking from Brussels to Amsterdam')

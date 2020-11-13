@@ -3,7 +3,6 @@ title: Leaving Facebook
 updated: 2018-09-10 22:30
 category: opinion
 tags: social media, facebook, communication, image, framing, media, network theory, granovetter, weak ties, strong ties
-permalink: /:categories/:year/:month/:day/:title.html
 ---
 
 ## Saying Goodbye to Facebook: Debrief with a note of Network Theory 

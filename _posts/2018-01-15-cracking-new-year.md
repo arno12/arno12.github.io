@@ -3,7 +3,6 @@ title: Forcing Movement
 updated: 2018-02-06 11:30
 category: opinion
 tags: politics, leaders, communication, image, framing, media, policies
-permalink: /:categories/:year/:month/:day/:title.html
 ---
 
 It has been a while that I haven't written anything and I feel bad about it, as usual. 

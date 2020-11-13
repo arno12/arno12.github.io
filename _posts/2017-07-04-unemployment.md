@@ -3,7 +3,6 @@ title: Unemployment
 updated: 2017-07-04 11:30
 category: opinion
 tags: personal, job
-permalink: /:categories/:year/:month/:day/:title.html
 ---
 
 I remember the stories I heard in the news a few years ago. Young graduates couldn’t find a job, their degree was worth very little and employers didn’t have funds to invest in new workforce. It seemed problematic but justified to me. Surely, those graduates didn’t research the employability of the field they were getting into. Surely, they lacked crucial experience that can be nurtured through internships during the summer. Surely, they were responsible as well. Yet today I am one of them, a freshly unemployed graduate, who begins to feel the invisible hand dragging him down, on the concrete floor.

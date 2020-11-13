@@ -3,7 +3,6 @@ title: World Leaders Manipulating Public Opinion
 updated: 2019-09-03 11:30
 category: opinion
 tags: politics, leaders, communication, image, framing, media, policies
-permalink: /:categories/:year/:month/:day/:title.html
 ---
 
 it's almost been a year that I haven't written anything.

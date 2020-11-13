@@ -3,7 +3,6 @@ title: On Vicious Hierarchies
 updated: 2020-10-10 16:30
 category: opinion
 tags: sociology, news, organization, startup, company, work, job
-permalink: /:categories/:year/:month/:day/:title.html
 ---
  
 ## A personal reflection
