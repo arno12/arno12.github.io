@@ -11,7 +11,7 @@ reasoning behind them.
 <h2 class="post-title">
   {% unless post.category contains "rmarkdown" %}
   <a href="{{ post.url }}">{{ post.title }}</a>
-  </h1>
+  </h2>
   <span class="post-date">{{ post.date | date_to_string }}</span>
 
   <details>
