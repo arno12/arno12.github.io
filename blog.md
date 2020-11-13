@@ -21,6 +21,5 @@ reasoning behind them.
   </details>
   <br>
   {% endunless %}
-  </li>
   {% endfor %}
 </ul>
