@@ -8,7 +8,7 @@ In this section, I will share the things I find out, either useful or just inter
 The collection of posts below were written in [R Markdown](https://rmarkdown.rstudio.com/)
 
 {% for post in site.posts %}
-    {% if post.category contains "rmarkdown" %}
+    {% if post.category contains "data" %}
 
 <h2 class="post-title">
 <a href="{{ post.url }}">{{ post.title }}</a>
