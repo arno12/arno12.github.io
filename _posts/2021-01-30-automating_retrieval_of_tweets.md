@@ -51,6 +51,7 @@ From then on, the Raspberry Pi started running it once a day via a Cronjob.
 
 2. **Overview of the most influential accounts tweeting about each company**<br/><br/>
 This graph shows accounts that were more influential (likes and retweets) from the data we have collected. Since there are multiple languages at hand, there is a color code related to those accounts, meaning that a single accounts tweeting in n languages could results in that account appearing n times. Some accounts with a single tweet without engagement have been filtered out. Note that the scales are logs to contain outliers. 
+
 ![alt text]({{site.url}}/assets/2021-01-30-14h40_tweet_users.png)
 
 I'd like to find a way to make this graph more interactive so that a user could click on an account's name and drill down the tweets that are behind it. 
