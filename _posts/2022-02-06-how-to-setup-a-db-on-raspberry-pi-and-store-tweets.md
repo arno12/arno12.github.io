@@ -1,3 +1,10 @@
+---
+title: How to setup a database on your Raspberry Pi and store tweets on it
+updated: 2022-02-09 18:32
+category: data
+tags: data, python, mariadb, raspberry pi, mysql, database, pandas, tweets, twitter
+---
+
 # How to setup a database on your Raspberry Pi and store tweets on it
 This blog post covers the steps that I had to follow in order to set up a database on my Raspberry Pi, on which I could then store tweets from a daily Twitter search focusing on specific keywords. I installed a Mariadb database on my Raspberry Pi so that it could efficiently store the tweets in a tabular format and easily query subsets of it when needed, without having to store csvs on Github. 
 
