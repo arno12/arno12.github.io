@@ -22,7 +22,7 @@ reasoning behind them.
     Show excerpt 
   </summary>
 
-  {{ post.content | truncatewords:75 }}
+  {{ post.content | truncatewords:100 }}
   </p>
   <br>
 
