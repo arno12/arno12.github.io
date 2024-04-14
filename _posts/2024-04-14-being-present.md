@@ -2,7 +2,7 @@
 title: Being present
 updated: 2024-04-14 12:02
 category: opinion
-tags: opinion, Atos, woke, presence, moral relativism, history, generation, capitalism
+tags: opinion, atos, woke, presence, moral relativism, history, generation, capitalism
 ---
 
 One of the most relaxing activities I have experienced as of last is simply reading the right things, at the right time. There is something special in being able to enjoy the morning rays of sun drifting through a window and feeling its warm presence while sipping on a hot drink and reading something intellectually moving.
